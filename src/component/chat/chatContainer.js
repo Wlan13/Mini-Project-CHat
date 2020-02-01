@@ -42,16 +42,13 @@ export class chatContainer extends Component {
 	};
 
 	clicktoRoom = (item) => {
-		this.setState(
-			{
-				idfriends: item.id,
-				avatarfriends: item.avatar,
-				namefriends: item.name,
-				emailfriends: item.email,
-				phonefriends: item.no_telp
-			},
-			
-		);
+		this.setState({
+			idfriends: item.id,
+			avatarfriends: item.avatar,
+			namefriends: item.name,
+			emailfriends: item.email,
+			phonefriends: item.no_telp
+		});
 		document.getElementById('inputDiv').style.display = 'block';
 	};
 

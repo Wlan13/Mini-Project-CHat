@@ -39,14 +39,14 @@ export class Register extends React.Component {
 			email: this.state.email,
 			no_telp: this.state.no_telp
 		};
-		this.setState({ isLoading: true });
+		/* this.setState({ isLoading: true }); */
 
 		axios
 			.post('https://calm-mesa-84057.herokuapp.com/register', dataInput)
 			.then((res) => {
 				localStorage.setItem('data', res.data.data.user);
 				console.log(res);
-				this.setState({ isLoading: false });
+				/* this.setState({ isLoading: false }); */
 			})
 			.catch((err) => {
 				console.log(err);
@@ -54,13 +54,13 @@ export class Register extends React.Component {
 	};
 
 	render() {
-		if (this.state.isLoading) {
+	/* 	if (this.state.isLoading) {
 			return (
 				<div className="load">
 					<p>LOADING</p>
 				</div>
 			);
-		}
+		} */
 		return (
 			<React.Fragment>
 				{/* <div className="row">

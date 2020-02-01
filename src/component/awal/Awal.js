@@ -34,6 +34,7 @@ export class Awal extends Component {
 						<div className="col text-title" style={{ height: '35vw' }}>
 							<img
 								src={lambang}
+								alt=""
 								style={{ width: '15vw', textAlign: 'center', marginRight: '40vw', marginTop: '15vh' }}
 							/>
 							<h3 style={{ color: 'white', textAlign: 'center', marginRight: '40vw' }}>

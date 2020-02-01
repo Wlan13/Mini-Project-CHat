@@ -5,7 +5,7 @@ import logo from './Logo.png';
 
 import './navbar.css';
 import axios from 'axios';
-import { Redirect, Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 import './navbar.css';
@@ -31,10 +31,10 @@ export class Navbar extends Component {
 			var elems = document.querySelectorAll('.modal');
 			M.Modal.init(elems);
 		});
-		document.addEventListener('DOMContentLoaded', function() {
+	/* 	document.addEventListener('DOMContentLoaded', function() {
 			var elems = document.querySelectorAll('.autocomplete');
 			M.Autocomplete.init(elems);
-		});
+		}); */
 
 		const state = localStorage.getItem('data');
 		const data = JSON.parse(state);
@@ -102,9 +102,9 @@ export class Navbar extends Component {
 					user: res.data
 				});
 			})
-			.catch((err) => {
+			/* .catch((err) => {
 				err;
-			});
+			}); */
 	};
 	// getAllData = () => {
 	// 	axios
@@ -297,7 +297,6 @@ export class Navbar extends Component {
 								<i className="material-icons">power_settings_new</i>
 							</a>
 						</li>
-						
 					</ul>
 					<p href="#" style={{ cursor: 'pointer' }} data-target="slide-out" className="sidenav-trigger">
 						<i className="material-icons">menu</i>
